@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
+using Banco_de_Horas.conexao;
+using Banco_de_Horas.modelo;
 
-namespace Ponto_Educacional.bd
+namespace Banco_de_Horas.bd
 {
-    class EscolaBD
+    class FuncionarioBd
     {
         private MySqlConnection conexao;
         private MySqlCommand comando;
         private Conecta c;
-        private List<Escola> lista = new List<Escola>();
         private MySqlDataAdapter mDa = new MySqlDataAdapter();
         
 
-        public EscolaBD()
+        public FuncionarioBd()
         {
             c = new Conecta();
 
@@ -49,7 +50,7 @@ namespace Ponto_Educacional.bd
 
                 dt.Load(reader);
 
-            }catch (Exception e)
+            } catch (Exception e)
             {
 
             }
@@ -58,43 +59,18 @@ namespace Ponto_Educacional.bd
             return dt;
         }
 
-        public Escola selecionado(int id)
-        {
-            Escola escola = new Escola();
-            MySqlDataReader reader;
-            conexao.Close();
-            conexao.Open();
-            try
-            {
-                comando = new MySqlCommand("SELECT * FROM pnteduc.escola WHERE @id = escolaId", conexao);
-                comando.Parameters.AddWithValue("@id", id);
-                reader = comando.ExecuteReader();
-                List<Escola> lista = new List<Escola>();
-                while (reader.Read()) {
-                    string idS = reader[0].ToString();
-                    string nome = reader[1].ToString();
+        
 
-                    int idi = Int32.Parse(idS);
-                    escola = new Escola(idi, nome);
-                }
-                
-            }
-            catch (Exception e)
-            {
-
-            }
-            return escola;
-
-        }
-
-        public void salvar(Escola e )
+        public void salvar(Funcionario f )
         {
             comando = new MySqlCommand();
-            comando.CommandText = "INSERT INTO escola (nomeEscola) VALUES (@nome)";
+            comando.CommandText = "INSERT INTO bancohoras.funcionario (id, nome, cargo, ativo, setorfk) VALUES (@cod, @nome, @cargo, @status, @setor);";
 
-
-            comando.Parameters.AddWithValue("@nome", e.NomeEscola);
-           
+            comando.Parameters.AddWithValue("@cod",f.Matricula);
+            comando.Parameters.AddWithValue("@nome", f.NomeFuncionario);
+            comando.Parameters.AddWithValue("@cargo",f.Cargo);
+            comando.Parameters.AddWithValue("@status",f.Ativo);
+            comando.Parameters.AddWithValue("@setor",f.Setor.IdSetor);
 
             try
             {

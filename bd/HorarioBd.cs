@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Banco_de_Horas.conexao;
 using MySql.Data.MySqlClient;
 using Ponto_Educacional.modelo;
 

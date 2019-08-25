@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.setorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,24 +47,26 @@
             this.cadastrarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(455, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(455, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funcionarioToolStripMenuItem});
-            this.cadastrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.funcionarioToolStripMenuItem,
+            this.setorToolStripMenuItem});
+            this.cadastrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Historic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(107, 29);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(97, 27);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             // 
             // funcionarioToolStripMenuItem
             // 
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.funcionarioToolStripMenuItem.Text = "Funcionario";
+            this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.FuncionarioToolStripMenuItem_Click);
             // 
             // txtFuncionario
             // 
@@ -74,8 +77,8 @@
             // 
             // lbNome
             // 
-            this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(-5, 64);
+            this.lbNome.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNome.Location = new System.Drawing.Point(12, 61);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(122, 25);
             this.lbNome.TabIndex = 2;
@@ -83,7 +86,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 23);
@@ -94,7 +97,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(124, 182);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(122, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "Matricula";
             this.button3.UseVisualStyleBackColor = true;
@@ -104,10 +107,17 @@
             // 
             this.button4.Location = new System.Drawing.Point(124, 238);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(122, 23);
             this.button4.TabIndex = 4;
             this.button4.Text = "Nome";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // setorToolStripMenuItem
+            // 
+            this.setorToolStripMenuItem.Name = "setorToolStripMenuItem";
+            this.setorToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.setorToolStripMenuItem.Text = "Setor";
+            this.setorToolStripMenuItem.Click += new System.EventHandler(this.SetorToolStripMenuItem_Click);
             // 
             // TelaInicial
             // 
@@ -123,6 +133,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaInicial";
             this.Text = "Banco de Horas";
+            this.Load += new System.EventHandler(this.TelaInicial_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,6 +151,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setorToolStripMenuItem;
     }
 }
 

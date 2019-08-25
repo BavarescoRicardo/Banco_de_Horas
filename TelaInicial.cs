@@ -22,5 +22,22 @@ namespace Banco_de_Horas
             Form2 telaHora = new Form2();
             telaHora.Visible = true;
         }
+
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroFuncionario cadastroFuncionario = new CadastroFuncionario();
+            cadastroFuncionario.Visible = true;
+        }
+
+        private void SetorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroSetor setor = new CadastroSetor();
+            setor.Visible = true;
+        }
     }
 }

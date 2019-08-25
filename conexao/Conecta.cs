@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace Ponto_Educacional.bd
+namespace Banco_de_Horas.conexao
+
 {
     public class Conecta
     {
@@ -19,7 +20,7 @@ namespace Ponto_Educacional.bd
 
         public MySqlConnection inicia()
         {
-            conexao = new MySqlConnection("Server=localhost; Database=pntEduc; Uid=root; Pwd=admin");
+            conexao = new MySqlConnection("Server=localhost; Database=bancohoras; Uid=root; Pwd=admin");
             try
             {
                 if (conexao.State == System.Data.ConnectionState.Closed)
