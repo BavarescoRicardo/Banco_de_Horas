@@ -67,8 +67,10 @@ namespace Banco_de_Horas
                 int idSetor = comboSetor.SelectedIndex;
                 SetorBd setorBd = new SetorBd();
                 Setor setor;
-                // receber setor do banco pelo id do comboBox
+                idSetor++;
+                // recebe o setor do banco pelo id do comboBox
                 setor = setorBd.selecionado(idSetor);
+
                 Funcionario funcionario = new Funcionario(cod, nome, cargo, ativo, setor);
 
                 txtNome.Text = " ";
@@ -83,7 +85,7 @@ namespace Banco_de_Horas
 
         private void CadastroFuncionario_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

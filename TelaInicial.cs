@@ -20,6 +20,7 @@ namespace Banco_de_Horas
         private void Button3_Click(object sender, EventArgs e)
         {
             Form2 telaHora = new Form2();
+            telaHora.defineMatricula(txtFuncionario.Text);
             telaHora.Visible = true;
         }
 

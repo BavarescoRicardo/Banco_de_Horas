@@ -117,15 +117,15 @@ namespace Banco_de_Horas.bd
                 reader = comando.ExecuteReader();
                 List<Setor> lista = new List<Setor>();
                 string nome = "z";
+                string ids = "00";
                 while (reader.Read())
                 {
-                    string idS = reader[0].ToString();
+                    ids = reader[0].ToString();
                     nome = reader[1].ToString();
-
-                    int idi = Int32.Parse(idS);
-                    
                 }
+                int idi = Int32.Parse(ids);
                 setor = new Setor(nome);
+                setor.IdSetor = idi;
 
             }
             catch (Exception e)
