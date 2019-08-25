@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bd\FuncionarioBd.cs" />
-    <Compile Include="bd\HorarioBd.cs" />
+    <Compile Include="bd\ExtraBd.cs" />
     <Compile Include="bd\SetorBd.cs" />
     <Compile Include="CadastroFuncionario.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
       <DependentUpon>CadastroSetor.cs</DependentUpon>
     </Compile>
     <Compile Include="conexao\Conecta.cs" />
+    <Compile Include="modelo\Extra.cs" />
     <Compile Include="modelo\Funcionario.cs" />
-    <Compile Include="modelo\Horario.cs" />
     <Compile Include="modelo\Setor.cs" />
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>

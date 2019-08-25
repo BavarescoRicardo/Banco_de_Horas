@@ -28,69 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QntHoras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabelaExtra = new System.Windows.Forms.DataGridView();
             this.lbNome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtObs = new System.Windows.Forms.TextBox();
+            this.escolhaDia = new System.Windows.Forms.DateTimePicker();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.txtMin = new System.Windows.Forms.TextBox();
+            this.lblMatricula = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tabelaExtra)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // tabelaExtra
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Data,
-            this.QntHoras,
-            this.Obs});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 150);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Data
-            // 
-            this.Data.Frozen = true;
-            this.Data.HeaderText = "Data";
-            this.Data.MinimumWidth = 20;
-            this.Data.Name = "Data";
-            this.Data.Width = 150;
-            // 
-            // QntHoras
-            // 
-            this.QntHoras.HeaderText = "Quantidade Horas";
-            this.QntHoras.MinimumWidth = 6;
-            this.QntHoras.Name = "QntHoras";
-            this.QntHoras.Width = 125;
-            // 
-            // Obs
-            // 
-            this.Obs.HeaderText = "Obs";
-            this.Obs.MinimumWidth = 50;
-            this.Obs.Name = "Obs";
-            this.Obs.Width = 300;
+            this.tabelaExtra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabelaExtra.Location = new System.Drawing.Point(2, 78);
+            this.tabelaExtra.Name = "tabelaExtra";
+            this.tabelaExtra.RowHeadersWidth = 51;
+            this.tabelaExtra.RowTemplate.Height = 24;
+            this.tabelaExtra.Size = new System.Drawing.Size(731, 150);
+            this.tabelaExtra.TabIndex = 0;
+            this.tabelaExtra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabelaExtra_CellContentClick);
             // 
             // lbNome
             // 
             this.lbNome.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(13, 13);
+            this.lbNome.Location = new System.Drawing.Point(12, 9);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(227, 23);
             this.lbNome.TabIndex = 1;
             this.lbNome.Text = "label1";
+            this.lbNome.Click += new System.EventHandler(this.LbNome_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 235);
+            this.label1.Location = new System.Drawing.Point(15, 276);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 17);
             this.label1.TabIndex = 2;
@@ -99,63 +75,90 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 231);
+            this.label2.Location = new System.Drawing.Point(255, 276);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Quantidade";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(347, 235);
+            this.label3.Location = new System.Drawing.Point(402, 276);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Observação";
             // 
-            // textBox1
+            // txtObs
             // 
-            this.textBox1.Location = new System.Drawing.Point(350, 276);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TabStop = false;
+            this.txtObs.Location = new System.Drawing.Point(405, 319);
+            this.txtObs.Name = "txtObs";
+            this.txtObs.Size = new System.Drawing.Size(100, 22);
+            this.txtObs.TabIndex = 5;
+            this.txtObs.TabStop = false;
+            this.txtObs.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // dateTimePicker1
+            // escolhaDia
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(18, 275);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 6;
+            this.escolhaDia.Location = new System.Drawing.Point(18, 317);
+            this.escolhaDia.Name = "escolhaDia";
+            this.escolhaDia.Size = new System.Drawing.Size(200, 22);
+            this.escolhaDia.TabIndex = 6;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(560, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Adicionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnAdd.Location = new System.Drawing.Point(560, 316);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // txtHora
+            // 
+            this.txtHora.Location = new System.Drawing.Point(258, 318);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(32, 22);
+            this.txtHora.TabIndex = 8;
+            // 
+            // txtMin
+            // 
+            this.txtMin.Location = new System.Drawing.Point(299, 319);
+            this.txtMin.Name = "txtMin";
+            this.txtMin.Size = new System.Drawing.Size(49, 22);
+            this.txtMin.TabIndex = 9;
+            // 
+            // lblMatricula
+            // 
+            this.lblMatricula.Location = new System.Drawing.Point(307, 17);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(100, 23);
+            this.lblMatricula.TabIndex = 11;
+            this.lblMatricula.Text = "label5";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 330);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(755, 368);
+            this.Controls.Add(this.lblMatricula);
+            this.Controls.Add(this.txtMin);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.escolhaDia);
+            this.Controls.Add(this.txtObs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbNome);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tabelaExtra);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabelaExtra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,16 +166,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tabelaExtra;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QntHoras;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Obs;
+        private System.Windows.Forms.TextBox txtObs;
+        private System.Windows.Forms.DateTimePicker escolhaDia;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.TextBox txtMin;
+        private System.Windows.Forms.Label lblMatricula;
     }
 }

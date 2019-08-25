@@ -1,5 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using Ponto_Educacional.modelo;
+using Bancod_de_Horas.modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

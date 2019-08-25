@@ -1,7 +1,6 @@
 ﻿using Banco_de_Horas.conexao;
 using Bancod_de_Horas.modelo;
 using MySql.Data.MySqlClient;
-using Ponto_Educacional.modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -70,29 +69,6 @@ namespace Banco_de_Horas.bd
                 reader = comando.ExecuteReader();
 
                 dt.Load(reader);
-                /*
-                  
-                int n = 0;
-                foreach (DataRow linha in dt.Rows)
-                {
-                    if (dt.Rows[n][1] != null)
-                    {
-                        int cod = Int32.Parse(dt.Rows[n][0].ToString()) ;
-                        string nomeS = dt.Rows[n][1].ToString();
-                      
-                        n++;
-                    }
-                    else
-                        break;
-                }
-               
-
-                dt.Columns[1].ColumnName = "Setor";
-   
-                dt.Columns[2].ColumnMapping = MappingType.Hidden;
- 
-
-                 */
 
             }
             catch (Exception)
