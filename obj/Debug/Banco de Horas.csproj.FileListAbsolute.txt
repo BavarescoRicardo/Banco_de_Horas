@@ -1,0 +1,10 @@
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe.config
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.pdb
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.TelaInicial.resources
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Form2.resources
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Properties.Resources.resources
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.GenerateResource.cache
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.exe
+C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.pdb
