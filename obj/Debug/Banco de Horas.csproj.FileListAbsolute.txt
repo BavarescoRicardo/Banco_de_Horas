@@ -16,6 +16,7 @@ C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Google.Pr
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroFuncionario.resources
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroSetor.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.PesquisaNome.resources
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.TelaInicial.resources
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Form2.resources
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Properties.Resources.resources

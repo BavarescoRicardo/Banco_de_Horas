@@ -40,5 +40,13 @@ namespace Banco_de_Horas
             CadastroSetor setor = new CadastroSetor();
             setor.Visible = true;
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            string nome = txtFuncionario.Text;
+            PesquisaNome pesquisa = new PesquisaNome();
+            pesquisa.setaNome(nome);
+            pesquisa.Visible = true;
+        }
     }
 }

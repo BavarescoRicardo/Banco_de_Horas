@@ -36,24 +36,33 @@ namespace Banco_de_Horas.bd
             }
         }
 
-        public DataTable listar()
+        
+        // SELECT * FROM bancohoras.funcionario WHERE nome LIKE 'r%';
+
+        public DataTable pesquisa(string nome)
         {
             DataTable dt = new DataTable();
-            dt.Columns.Add("escolaId");
-            dt.Columns.Add("nomeEscola");
+            dt.Columns.Add("id");
+            dt.Columns.Add("nome");
+            dt.Columns.Add("cqrgo");
+            dt.Columns.Add("ativo");
+            dt.Columns.Add("setorfk");
+
             MySqlDataReader reader;
             conexao.Close();
             conexao.Open();
             try
             {
-                comando = new MySqlCommand("SELECT * FROM pnteduc.escola", conexao);
+                comando = new MySqlCommand("SELECT * FROM bancohoras.funcionario WHERE nome LIKE @nome;", conexao);
+                comando.Parameters.AddWithValue("@nome", nome+"%");
                 reader = comando.ExecuteReader();
 
                 dt.Load(reader);
 
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
-                
+
             }
 
 

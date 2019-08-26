@@ -39,6 +39,8 @@
             this.txtHora = new System.Windows.Forms.TextBox();
             this.txtMin = new System.Windows.Forms.TextBox();
             this.lblMatricula = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaExtra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,7 +113,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(560, 316);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(89, 23);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -139,11 +141,31 @@
             this.lblMatricula.TabIndex = 11;
             this.lblMatricula.Text = "label5";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 235);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 17);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Total";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(95, 235);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(16, 17);
+            this.lblTotal.TabIndex = 13;
+            this.lblTotal.Text = "0";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 368);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblMatricula);
             this.Controls.Add(this.txtMin);
             this.Controls.Add(this.txtHora);
@@ -177,5 +199,7 @@
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.TextBox txtMin;
         private System.Windows.Forms.Label lblMatricula;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

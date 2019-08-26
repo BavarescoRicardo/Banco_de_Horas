@@ -69,6 +69,12 @@
     <Compile Include="modelo\Extra.cs" />
     <Compile Include="modelo\Funcionario.cs" />
     <Compile Include="modelo\Setor.cs" />
+    <Compile Include="PesquisaNome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaNome.Designer.cs">
+      <DependentUpon>PesquisaNome.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroSetor.resx">
       <DependentUpon>CadastroSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaNome.resx">
+      <DependentUpon>PesquisaNome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>

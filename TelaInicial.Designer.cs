@@ -31,12 +31,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.setorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,9 +64,16 @@
             // funcionarioToolStripMenuItem
             // 
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
             this.funcionarioToolStripMenuItem.Text = "Funcionario";
             this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.FuncionarioToolStripMenuItem_Click);
+            // 
+            // setorToolStripMenuItem
+            // 
+            this.setorToolStripMenuItem.Name = "setorToolStripMenuItem";
+            this.setorToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
+            this.setorToolStripMenuItem.Text = "Setor";
+            this.setorToolStripMenuItem.Click += new System.EventHandler(this.SetorToolStripMenuItem_Click);
             // 
             // txtFuncionario
             // 
@@ -111,13 +118,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Nome";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // setorToolStripMenuItem
-            // 
-            this.setorToolStripMenuItem.Name = "setorToolStripMenuItem";
-            this.setorToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
-            this.setorToolStripMenuItem.Text = "Setor";
-            this.setorToolStripMenuItem.Click += new System.EventHandler(this.SetorToolStripMenuItem_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // TelaInicial
             // 
