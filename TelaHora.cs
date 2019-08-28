@@ -21,6 +21,7 @@ namespace Banco_de_Horas
         private ExtraBd extraBd = new ExtraBd();
         private Funcionario funcionario;
         private DataTable dt;
+        private int total = 0;
         public Form2()
         {
             InitializeComponent();
@@ -82,7 +83,7 @@ namespace Banco_de_Horas
         {
             int hr = 0;
             int min = 0;
-            int total = 0;
+            
             
             foreach (DataRow linha in dt.Rows){
                 hr += Int32.Parse(linha[1].ToString());
@@ -126,6 +127,15 @@ namespace Banco_de_Horas
         private void Label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnDescontar_Click(object sender, EventArgs e)
+        {
+            
+            int desconto = (Int32.Parse(compH.Text) );
+            total -= desconto;
+            //descontar minutos Int32.Parse(lblTotal.Text)
+            lblTotal.Text = total.ToString();
         }
     }
 }
