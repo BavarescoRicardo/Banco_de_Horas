@@ -8,23 +8,6 @@ C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco
 C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CoreCompileInputs.cache
 C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.exe
 C:\Users\Ricardo\Documents\Projeto Fimusi\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.pdb
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe.config
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.pdb
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\MySql.Data.dll
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Google.Protobuf.dll
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroFuncionario.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroSetor.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.PesquisaNome.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.TelaInicial.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Form2.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Properties.Resources.resources
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.GenerateResource.cache
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CoreCompileInputs.cache
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CopyComplete
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.exe
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.pdb
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco_de_Horas.CadastroFuncionario.resources
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco_de_Horas.CadastroSetor.resources
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco_de_Horas.PesquisaNome.resources
@@ -45,3 +28,21 @@ C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco de Horas.
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco de Horas.exe
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco de Horas.pdb
 C:\Users\Municipio Irani\Desktop\Banco_de_Horas-master\obj\Debug\Banco de Horas.csprojAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe.config
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.exe
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Banco de Horas.pdb
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\MySql.Data.dll
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\Google.Protobuf.dll
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csprojAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroFuncionario.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.CadastroSetor.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.PesquisaNome.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.TelaInicial.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Form2.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco_de_Horas.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.GenerateResource.cache
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CopyComplete
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.exe
+C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.pdb

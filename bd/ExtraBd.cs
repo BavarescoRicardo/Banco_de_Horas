@@ -34,13 +34,14 @@ namespace Bancod_de_Horas.bd
 
         public void salvar(Extra e)
         {
-            comando.CommandText = "INSERT INTO bancohoras.extra (quantidadeH,quantidadeMin,dia,observacao,funcionarioFk)"+
-                " VALUES (@hr,@mn,@dia,@obs,@func)";
+            comando.CommandText = "INSERT INTO bancohoras.extra (quantidadeH,quantidadeMin,dia,observacao,desconto,funcionarioFk)"+
+                " VALUES (@hr,@mn,@dia,@obs,@desco,@func)";
 
             comando.Parameters.AddWithValue("@hr",e.ExtraHora);
             comando.Parameters.AddWithValue("@mn",e.ExtraMin);
             comando.Parameters.AddWithValue("@dia",e.Dia);
             comando.Parameters.AddWithValue("@obs",e.Observacao);
+            comando.Parameters.AddWithValue("@desco", e.Desconto);
             comando.Parameters.AddWithValue("@func",e.Funcionario.Matricula);
 
             try

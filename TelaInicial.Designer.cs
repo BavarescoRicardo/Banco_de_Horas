@@ -124,6 +124,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(455, 273);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -132,6 +134,7 @@
             this.Controls.Add(this.txtFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "TelaInicial";
             this.Text = "Banco de Horas";
             this.Load += new System.EventHandler(this.TelaInicial_Load);

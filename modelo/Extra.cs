@@ -9,20 +9,21 @@ namespace Banco_de_Horas.modelo
     class Extra
     {
         private int idExtra;
-        // private int quantidade;
         private int extraHora;
         private int extraMin;
         private DateTime dia;
         private string observacao;
+        private int desconto;
         private Funcionario funcionario;
 
-        public Extra(int extraHora, int extraMin, DateTime dia, string observacao, Funcionario funcionario)
+        public Extra(int extraHora, int extraMin, DateTime dia, string observacao, int desconto, Funcionario funcionario)
         {
-            this.extraHora = extraHora;
-            this.extraMin = extraMin;
-            this.dia = dia;
-            this.observacao = observacao;
-            this.funcionario = funcionario;
+            this.ExtraHora = extraHora;
+            this.ExtraMin = extraMin;
+            this.Dia = dia;
+            this.Observacao = observacao;
+            this.Desconto = desconto;
+            this.Funcionario = funcionario;
         }
 
         public int IdExtra { get => idExtra; set => idExtra = value; }
@@ -30,7 +31,7 @@ namespace Banco_de_Horas.modelo
         public int ExtraMin { get => extraMin; set => extraMin = value; }
         public DateTime Dia { get => dia; set => dia = value; }
         public string Observacao { get => observacao; set => observacao = value; }
-      //  public int Quantidade { get => quantidade; set => quantidade = value; }
+        public int Desconto { get => desconto; set => desconto = value; }
         internal Funcionario Funcionario { get => funcionario; set => funcionario = value; }
     }
 }

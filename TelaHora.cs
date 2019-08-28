@@ -21,7 +21,8 @@ namespace Banco_de_Horas
         private ExtraBd extraBd = new ExtraBd();
         private Funcionario funcionario;
         private DataTable dt;
-        private int total = 0;
+        private int total,hr,min,hrD,minD = 0;
+        private int desconto = 0;
         public Form2()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace Banco_de_Horas
             string obs = txtObs.Text;
             int codFk = funcionario.Matricula;
 
-            horaExtra = new Extra(quantidadeH, quantidadeMin, dia, obs, funcionario);
+            horaExtra = new Extra(quantidadeH, quantidadeMin, dia, obs,0, funcionario);
 
             extraBd.salvar(horaExtra);
 
@@ -76,18 +77,19 @@ namespace Banco_de_Horas
             tabelaExtra.Columns[3].HeaderText = "Data";
             tabelaExtra.Columns[4].HeaderText = "Observação";
             tabelaExtra.Columns[4].Width = 190;
-            tabelaExtra.Columns[5].Visible = false;
+            tabelaExtra.Columns[5].HeaderText = "Compensado";
+            tabelaExtra.Columns[5].Width = 70;
+            tabelaExtra.Columns[6].Visible = false;
             defineTotal();
         }
         private void defineTotal()
-        {
-            int hr = 0;
-            int min = 0;
-            
-            
+        {      
             foreach (DataRow linha in dt.Rows){
-                hr += Int32.Parse(linha[1].ToString());
-                min += Int32.Parse(linha[2].ToString());
+                if (linha[5].ToString().Equals("0"))
+                {
+                    hr += Int32.Parse(linha[1].ToString());
+                    min += Int32.Parse(linha[2].ToString());
+                }
             }
             
             if (min >= 60)
@@ -131,9 +133,27 @@ namespace Banco_de_Horas
 
         private void BtnDescontar_Click(object sender, EventArgs e)
         {
-            
-            int desconto = (Int32.Parse(compH.Text) );
-            total -= desconto;
+
+            Extra horaExtra;
+
+            int quantidadeCompH = Int32.Parse(compH.Text);
+            int quantidadeCompMin = Int32.Parse(compM.Text);
+            DateTime dia = escolheDiaComp.Value;
+            string obs = txtObsComp.Text;
+            int codFk = funcionario.Matricula;
+
+            horaExtra = new Extra(quantidadeCompH, quantidadeCompMin, dia, obs, 1, funcionario);
+
+            extraBd.salvar(horaExtra);
+
+            MessageBox.Show("Horas compensadas !!");
+            compH.Text = "";
+            compM.Text = "";
+            txtObsComp.Text = "";
+
+            defineF();
+            defineTotal();
+
             //descontar minutos Int32.Parse(lblTotal.Text)
             lblTotal.Text = total.ToString();
         }

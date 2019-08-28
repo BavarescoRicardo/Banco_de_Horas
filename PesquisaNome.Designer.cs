@@ -49,6 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 352);
             this.Controls.Add(this.tabelaFuncionario);
+            this.MaximizeBox = false;
             this.Name = "PesquisaNome";
             this.Text = "PesquisaNome";
             this.Load += new System.EventHandler(this.PesquisaNome_Load);
