@@ -14,10 +14,13 @@ namespace Banco_de_Horas
 {
     public partial class TelaLogin : Form
     {
+        private TelaInicial incial;
         public TelaLogin()
         {
             InitializeComponent();
         }
+
+        public TelaInicial Incial { get => incial; set => incial = value; }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
@@ -32,6 +35,7 @@ namespace Banco_de_Horas
                 MessageBox.Show("Tudo OK");
                 txtNome.Text = "";
                 txtSenha.Text = "";
+                incial.ativaTela();
                 this.Visible = false;
             }
             else
@@ -40,6 +44,11 @@ namespace Banco_de_Horas
                 txtNome.Text = "";
                 txtSenha.Text = "";
             }
+
+        }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

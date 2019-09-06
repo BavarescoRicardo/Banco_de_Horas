@@ -16,6 +16,7 @@ namespace Banco_de_Horas
         {
             InitializeComponent();
             TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Incial = this;
             telaLogin.Visible = true;
         }
 
@@ -24,6 +25,13 @@ namespace Banco_de_Horas
             Form2 telaHora = new Form2();
             telaHora.defineMatricula(txtFuncionario.Text);
             telaHora.Visible = true;
+        }
+
+        public void ativaTela()
+        {
+            txtFuncionario.Enabled = true;
+            btnMatricula.Enabled = true;
+            btnNome.Enabled = true;
         }
 
         private void TelaInicial_Load(object sender, EventArgs e)

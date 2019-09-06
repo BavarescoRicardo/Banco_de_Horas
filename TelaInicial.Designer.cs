@@ -36,8 +36,8 @@
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnMatricula = new System.Windows.Forms.Button();
+            this.btnNome = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +78,7 @@
             // 
             // txtFuncionario
             // 
+            this.txtFuncionario.Enabled = false;
             this.txtFuncionario.Location = new System.Drawing.Point(166, 64);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(265, 22);
@@ -101,27 +102,27 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Pesquisas";
             // 
-            // button3
+            // btnMatricula
             // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(124, 182);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Matricula";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btnMatricula.Enabled = false;
+            this.btnMatricula.Location = new System.Drawing.Point(124, 182);
+            this.btnMatricula.Name = "btnMatricula";
+            this.btnMatricula.Size = new System.Drawing.Size(122, 23);
+            this.btnMatricula.TabIndex = 3;
+            this.btnMatricula.Text = "Matricula";
+            this.btnMatricula.UseVisualStyleBackColor = true;
+            this.btnMatricula.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button4
+            // btnNome
             // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(124, 238);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Nome";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.btnNome.Enabled = false;
+            this.btnNome.Location = new System.Drawing.Point(124, 238);
+            this.btnNome.Name = "btnNome";
+            this.btnNome.Size = new System.Drawing.Size(122, 23);
+            this.btnNome.TabIndex = 4;
+            this.btnNome.Text = "Nome";
+            this.btnNome.UseVisualStyleBackColor = true;
+            this.btnNome.Click += new System.EventHandler(this.Button4_Click);
             // 
             // TelaInicial
             // 
@@ -131,8 +132,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(455, 273);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnNome);
+            this.Controls.Add(this.btnMatricula);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtFuncionario);
             this.Controls.Add(this.menuStrip1);
@@ -157,8 +158,8 @@
         private System.Windows.Forms.TextBox txtFuncionario;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMatricula;
+        private System.Windows.Forms.Button btnNome;
         private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setorToolStripMenuItem;
     }

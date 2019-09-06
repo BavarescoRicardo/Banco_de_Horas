@@ -46,4 +46,3 @@ C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de 
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csproj.CopyComplete
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.exe
 C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.pdb
-C:\Users\Ricardo\Desktop\Repositorios\bdHoras\Banco de Horas\obj\Debug\Banco de Horas.csprojAssemblyReference.cache
