@@ -103,6 +103,7 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(124, 182);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 23);
@@ -113,6 +114,7 @@
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(124, 238);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(122, 23);
@@ -134,6 +136,7 @@
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtFuncionario);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;

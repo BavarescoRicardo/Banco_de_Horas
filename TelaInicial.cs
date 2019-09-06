@@ -15,6 +15,8 @@ namespace Banco_de_Horas
         public TelaInicial()
         {
             InitializeComponent();
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Visible = true;
         }
 
         private void Button3_Click(object sender, EventArgs e)

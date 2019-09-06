@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="bd\FuncionarioBd.cs" />
     <Compile Include="bd\ExtraBd.cs" />
+    <Compile Include="bd\LoginBd.cs" />
     <Compile Include="bd\SetorBd.cs" />
     <Compile Include="CadastroFuncionario.cs">
       <SubType>Form</SubType>
@@ -68,6 +69,7 @@
     <Compile Include="conexao\Conecta.cs" />
     <Compile Include="modelo\Extra.cs" />
     <Compile Include="modelo\Funcionario.cs" />
+    <Compile Include="modelo\Login.cs" />
     <Compile Include="modelo\Setor.cs" />
     <Compile Include="PesquisaNome.cs">
       <SubType>Form</SubType>
@@ -89,6 +91,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroFuncionario.resx">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +121,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
