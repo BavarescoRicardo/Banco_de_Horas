@@ -104,7 +104,7 @@ namespace Banco_de_Horas
                 }
             }
 
-            if (min >= 59)
+            if (min > 59)
             {
                 for (int cont = 0; cont <= min; cont += 60)
                 {
@@ -115,7 +115,7 @@ namespace Banco_de_Horas
 
             }
 
-            if (minD >= 59)
+            if (minD > 59)
             {
                 for (int cont = 0; cont <= minD; cont += 60)
                 {
@@ -164,12 +164,13 @@ namespace Banco_de_Horas
             int quantidadeCompH = Int32.Parse(compH.Text);
             int quantidadeCompMin = Int32.Parse(compM.Text);
             int haversH = Int32.Parse(lblTotal.Text);
+            int haversMin = Int32.Parse(lblTotalmin.Text);
             DateTime dia = escolheDiaComp.Value;
             string obs = txtObsComp.Text;
             int codFk = funcionario.Matricula;
 
             horaExtra = new Extra(quantidadeCompH, quantidadeCompMin, dia, obs, 1, funcionario);
-            if (haversH > quantidadeCompH)
+            if ( (haversH > quantidadeCompH) || (haversH == quantidadeCompH && haversMin >= quantidadeCompMin) )
             {
                 extraBd.salvar(horaExtra);
 
